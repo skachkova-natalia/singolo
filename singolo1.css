@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: LatoRegular, sans-serif;
+}
+
+body {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #2d303a;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    box-shadow: 0 6px 0 #323746;
+    position: relative;
+    z-index: 3;
+}
+
+.header-title {
+    color: #ffffff;
+    margin-top: 3px;
+    margin: 38px;
+    font-size: 25px;
+    letter-spacing: -0.1px;
+}
+
+.header-title::after {
+    content: "*";
+    color: #ff0000;
+}
+
+.header-nav {
+    margin-right: 37px;
+}
+
+.header-nav ul {
+    display: flex;
+    margin-top: 10px;
+    list-style-position: inside;
+}
+
+.header-nav ul li {
+    color: #3a3c4b;
+    margin-left: 7px;
+    margin-right: 3px;
+    font-size: 12px;
+}
+
+.header-nav ul li:first-child {
+    list-style: none;
+}
+
+.header-nav ul li .active {
+    color: #ff0000;
+}
+
+.header-nav ul li span {
+    color: #ffffff;
+    font-family: LatoBold, sans-serif;
+}
+
+.header-nav ul li span:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.slider {
+    background-color: #ff4863;
+    height: 600px;
+    box-shadow: 0 6px 0 #ea676b;
+    position: relative;
+    z-index: 2;
+}
+
+.slider-arrow {
+    position: absolute;
+    cursor: pointer;
+    padding-top: 287px;
+}
+
+.slider-arrow-prev {
+    padding-left: 42px;
+}
+
+.slider-arrow-next {
+    right: 40px;
+}
+
+.slider-item .slider-horisontal {
+    position: absolute;
+    padding-top: 59px;
+    padding-left: 112px;
+}
+
+.slider-item .slider-vertical {
+    position: absolute;
+    padding-top: 180px;
+    right: 111px;
+}
+
+.services {
+    position: relative;
+    color: #666d89;
+    background-color: #f2f2f2;
+    height: 500px;
+    box-shadow: 0 6px 0 #ffffff;
+    z-index: 1;
+    padding-left: 40px;
+    padding-right: 37px;
+}
+
+.services-title {
+    position: relative;
+    margin: 0;
+    font-size: 29px;
+    padding-top: 66px;
+    text-transform: capitalize;
+    font-family: LatoMedium, sans-serif;
+    letter-spacing: 0.6px;
+}
+
+.services-description {
+    position: relative;
+    font-size: 18px;
+    padding-top: 0px;
+    font-family: LatoLight, sans-serif;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    word-spacing: -1px;
+    margin: 18px 0;
+    text-align: justify;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    height: 250px;
+    margin: 6px 0;
+}
+
+.advantage-item {
+    display: flex;
+    justify-content: flex-start;
+    width: 304px;
+    height: 110px;
+    margin-top: 19px;
+    margin-bottom: -5px;
+}
+
+.advantage-item-image img {
+    margin: 8px 0px;
+}
+
+.advantage-item-title {
+    letter-spacing: .4px;
+    margin-top: 5px;
+    margin-left: 18px;
+    text-transform: capitalize;
+    font-size: 18px;
+    word-spacing: -1px;
+}
+
+.advantage-item-description {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 8px;
+    margin-left: 18px;
+    max-height: 65px;
+    overflow: hidden; 
+    letter-spacing: .4px;
+    word-spacing: -.4px;
+}
+
+@font-face {
+    font-family: 'LatoMedium';
+    src: url("./assets/fonts/Lato/Lato-Medium.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoRegular';
+    src: url("./assets/fonts/Lato/Lato-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url("./assets/fonts/Lato/Lato-Light.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
