@@ -6,3 +6,6 @@
 
 ### Singolo. Part 2
 [Task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/part-2/singolo-2-ru.md) [Result](https://skachkova-natalia.github.io/singolo/singolo2.html)
+
+### Singolo. Part 2
+[Task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/part-3/singolo-3-ru.md) [Result](https://skachkova-natalia.github.io/singolo/singolo3.html)
