@@ -1,0 +1,215 @@
+html {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", Verdana, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1.8rem;
+    margin: 0;
+    padding: 68px 0 0 42px;
+    letter-spacing: 0.001rem;
+    color: #f0d8d9;
+}
+
+h3 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: #f0d8d9;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+p {
+    color: #f0d8d9;
+    text-align: justify;
+}
+
+::placeholder {
+    color: #f48c8f;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    font-weight: normal;
+    letter-spacing: 0.00001rem;
+}
+
+.layout-2-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1020px;
+    margin: auto;
+    height: 100%;
+}
+
+.section-description {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 300;
+    padding: 27px 41px 0 41px;
+    letter-spacing: 0.001rem;
+    margin: 0;
+}
+
+.icon {
+    cursor: pointer;
+    display: inline-block;
+    width: 32px;
+    height: 34px;
+    margin: 13px 1.5px;
+}
+
+.icon:hover {
+    opacity: 0.3;
+}
+
+.icon_facebook {
+    background: url("./assets/images/SocialMedia/Facebook.png") no-repeat center;
+}
+
+.icon_google {
+    background: url("./assets/images/SocialMedia/Google.png") no-repeat center;
+}
+
+.icon_twitter {
+    background: url("./assets/images/SocialMedia/Twitter.png") no-repeat center;
+}
+
+.icon_linkedin {
+    background: url("./assets/images/SocialMedia/LinkedIn.png") no-repeat center;
+}
+
+.contact-us {
+    height: 648px;
+    background-color: #f06c64;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 6px 0 #ea676b;
+    color: #ffffff;
+}
+
+.contact-form {
+    margin: 37px 34px;
+}
+
+.contact-form__message {
+    width: 63%;
+}
+
+.message__item {
+    border: 2px solid #d6564f;
+    border-radius: 5px;
+    background-color: #d6564f;
+    padding: 8px 0 11px 13px;
+    margin: 8px;
+    width: 100%;
+}
+
+textarea.message__item {
+    resize: none;
+}
+
+.message_button {
+    border: 2px solid #f0d8d9;
+    border-radius: 5px;
+    background-color: #f0d8d9;
+    color: #2d303a;
+    width: 10%;
+    margin-left: 94%;
+}
+
+.message_button:hover {
+    background-color: #2d303a;
+    cursor: pointer;
+    border: 2px solid #2d303a;
+    transition: all 0.3s;
+    color: #f0d8d9;
+}
+
+.contact-form__info {
+    width: 32%;
+    padding-top: 7px;
+}
+
+.contact-info__description {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    margin-top: 10px;
+    margin-bottom: 19px;
+}
+
+.contact-info__item {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    padding-left: 20px;
+    margin-left: 2px;
+    text-decoration: none;
+    color: #f0d8d9;
+}
+
+.contact-info__item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #666d89;
+}
+
+.icon_location {
+    background: url("./assets/images/ContactInfo/location.png") no-repeat left;
+}
+
+.icon_phone {
+    background: url("./assets/images/ContactInfo/phone.png") no-repeat left;
+}
+
+.icon_mail {
+    background: url("./assets/images/ContactInfo/mail.png") no-repeat left;
+}
+
+.footer {
+    height: 82px;
+    background-color: #2d303a;
+}
+
+.copyright {
+    font-size: 1.2rem;
+    letter-spacing: -0.01rem;
+    color: #666d89;
+    margin: 36px 41px;
+    word-spacing: 0.01rem;
+}
+
+.footer .social-networks {
+    margin: 15px 38px;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("./assets/fonts/Lato/Lato-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("./assets/fonts/Lato/Lato-Light.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("./assets/fonts/Lato/Lato-Black.ttf") format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
