@@ -11,5 +11,5 @@
 [Task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/part-3/singolo-3-ru.md) [Result](https://skachkova-natalia.github.io/singolo/singolo3.html)
 
 ### Full site
-[Result](https://skachkova-natalia.github.io/singolo/)
+[Result](https://skachkova-natalia.github.io/singolo/index.html)
 
