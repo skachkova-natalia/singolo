@@ -2,7 +2,7 @@ html {
     font-size: 10px;
     margin: 0;
     padding: 0;
-    font-family: "Lato", Verdana, sans-serif;
+    font-family: 'Lato', Verdana, sans-serif;
     font-weight: normal;
 }
 
@@ -16,7 +16,7 @@ h1 {
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.00001rem;
+    letter-spacing: 0.001rem;
 }
 
 h2 {
@@ -25,7 +25,7 @@ h2 {
     color: #666d89;
     text-transform: capitalize;
     margin: 0;
-    padding: 74px 0 0 42px;
+    padding: 74px 0 0 41px;
     letter-spacing: 0.001rem;
 }
 
@@ -48,7 +48,7 @@ input::placeholder, textarea::placeholder {
     font-size: 1.1rem;
     line-height: 2.2rem;
     font-weight: normal;
-    letter-spacing: 0.00001rem;
+    letter-spacing: 0.001rem;
 }
 
 .layout-2-column {
@@ -80,9 +80,9 @@ input::placeholder, textarea::placeholder {
     font-size: 1.8rem;
     line-height: 3rem;
     font-weight: 300;
-    padding: 27px 41px 0 41px;
+    margin: 27px 41px 0 41px;
     letter-spacing: 0.001rem;
-    margin: 0;
+    word-spacing: -1px;
 }
 
 .header {
@@ -93,12 +93,8 @@ input::placeholder, textarea::placeholder {
     position: relative;
 }
 
-.header__wrapper {
-    padding: 24px 0;
-}
-
 .header__title {
-    padding: 0 40px;
+    margin: 40px 0 0 40px;
 }
 
 .header__title span {
@@ -107,29 +103,30 @@ input::placeholder, textarea::placeholder {
 
 .navigation {
     display: flex;
-    padding: 5px 38px;
-    list-style-position: inside;
-    color: #3a3c4b;
+    list-style: none;
+    margin: 42px 37px 0 0;
 }
 
 .navigation__link {
-    padding: 0 0 0 13px;
     font-size: 1.2rem;
-    line-height: 0.6rem;
-    color: #3a3c4b;
+    font-weight: bold;
+    margin-left: 12px;
     text-transform: uppercase;
     letter-spacing: 0.00001rem;
-}
-
-.navigation__link span {
     color: #ffffff;
 }
 
-.navigation__link:first-child {
-    list-style: none;
+.list-separator::after {
+    position: relative;
+    bottom: 1px;
+    content: '•';
+    font-size: 5px;
+    text-align: center;
+    color: #494e62;
+    padding: 0 0 0px 14px;
 }
 
-.navigation__link span:hover {
+.navigation__link:hover {
     color: #ff0000;
     cursor: pointer;
     transition: all 0.3s;
@@ -155,19 +152,20 @@ input::placeholder, textarea::placeholder {
 
 .arrow:hover {
     cursor: pointer;
+    opacity: 0.5;
     transition: all 0.3s;
 }
 
 .arrow-prev {
-    padding-left: 43px;
+    margin-left: 43px;
 }
 
 .arrow-next {
-    padding-right: 39px;
+    margin-right: 39px;
 }
 
 .phone {
-    padding: 0 19px 0 18px;
+    margin: 0 19px 0 18px;
 }
 
 .services {
@@ -180,24 +178,28 @@ input::placeholder, textarea::placeholder {
 
 .services .layout-3-column {
     height: 240px;
-    margin: 46px 41px;
+    margin: 40px 41px;
     align-items: flex-start;
 }
 
 .service {
-    max-width: 300px;
-    height: 120px;
-    margin-bottom: 3px;
+    width: 32%;
+    height: 115px;
+    overflow: hidden;
+    margin: 5px 0 3px 0;
 }
 
 .service__description {
-    width: 219px;
-    height: 100%;
     font-size: 1.2rem;
     line-height: 2.2rem;
     font-weight: normal;
+    height: 66px;
     overflow: hidden;
-    margin-top: 8px;
+    margin-top: 9px;
+}
+
+.service__icon {
+    padding-top: 1px;
 }
 
 .service__item {
@@ -212,10 +214,6 @@ input::placeholder, textarea::placeholder {
     position: relative;
 }
 
-.portfolio .layout-4-column {
-    height: 620px;
-}
-
 .portfolio__tags {
     margin: 9px 42px;
 }
@@ -226,8 +224,9 @@ input::placeholder, textarea::placeholder {
     color: #767e9e;
     font-weight: normal;
     text-transform: capitalize;
-    padding: 2px 6px 3px 7px;
-    margin-right: 4px;
+    padding: 2px 6px 3px 6px;
+    margin-right: 6px;
+    word-spacing: -1px;
 }
 
 .tag_bordered {
@@ -244,13 +243,17 @@ input::placeholder, textarea::placeholder {
 }
 
 .portfolio__images {
-    padding: 0 29px 0 31px;
+    margin: 0 29px 0 31px;
 }
 
 .portfolio__image {
-    width: 220px;
+    width: calc(25% - 20px);
     height: 187px;
-    padding: 10px;
+    margin: 10px;
+}
+
+.portfolio__image:nth-child(n + 13) {
+	display: none;
 }
 
 .about-us {
@@ -263,12 +266,12 @@ input::placeholder, textarea::placeholder {
 
 .about-us .layout-3-column {
     height: 470px;
-    margin: 35px 29px 35px 31px;
+    margin: 36px 29px 35px 31px;
 }
 
 .employee {
-    width: 300px;
-    padding: 10px;
+    width: calc(33% - 17px);
+    margin: 10px;
 }
 
 .employee__image {
@@ -283,35 +286,36 @@ input::placeholder, textarea::placeholder {
     font-size: 1.2rem;
     line-height: 2.1rem;
     font-weight: normal;
-    margin-top: 10px;
+    margin: 10px 0 11px 0;
 }
 
 .icon {
-    cursor: pointer;
     display: inline-block;
     width: 32px;
     height: 34px;
-    margin: 13px 1.5px;
+    margin: 13px 2px 0 1px;
 }
 
 .icon:hover {
     opacity: 0.3;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
 .icon_facebook {
-    background: url("./assets/images/SocialMedia/Facebook.png") no-repeat center;
+    background: url('./assets/images/SocialMedia/Facebook.png') no-repeat center;
 }
 
 .icon_google {
-    background: url("./assets/images/SocialMedia/Google.png") no-repeat center;
+    background: url('./assets/images/SocialMedia/Google.png') no-repeat center;
 }
 
 .icon_twitter {
-    background: url("./assets/images/SocialMedia/Twitter.png") no-repeat center;
+    background: url('./assets/images/SocialMedia/Twitter.png') no-repeat center;
 }
 
 .icon_linkedin {
-    background: url("./assets/images/SocialMedia/LinkedIn.png") no-repeat center;
+    background: url('./assets/images/SocialMedia/LinkedIn.png') no-repeat center;
 }
 
 .contact-us {
@@ -399,15 +403,15 @@ textarea.message__item {
 }
 
 .icon_location {
-    background: url("./assets/images/ContactInfo/location.png") no-repeat left;
+    background: url('./assets/images/ContactInfo/location.png') no-repeat left;
 }
 
 .icon_phone {
-    background: url("./assets/images/ContactInfo/phone.png") no-repeat left;
+    background: url('./assets/images/ContactInfo/phone.png') no-repeat left;
 }
 
 .icon_mail {
-    background: url("./assets/images/ContactInfo/mail.png") no-repeat left;
+    background: url('./assets/images/ContactInfo/mail.png') no-repeat left;
 }
 
 .footer {
@@ -429,28 +433,28 @@ textarea.message__item {
 
 @font-face {
     font-family: 'Lato';
-    src: url("./assets/fonts/Lato/Lato-Bold.ttf") format('truetype');
+    src: url('./assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url("./assets/fonts/Lato/Lato-Regular.ttf") format('truetype');
+    src: url('./assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url("./assets/fonts/Lato/Lato-Light.ttf") format('truetype');
+    src: url('./assets/fonts/Lato/Lato-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url("./assets/fonts/Lato/Lato-Black.ttf") format('truetype');
+    src: url('./assets/fonts/Lato/Lato-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
