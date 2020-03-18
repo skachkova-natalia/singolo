@@ -610,12 +610,15 @@ textarea.message__item {
 }
 
 .footer .social-networks {
-    margin: 15px 38px;
+    margin: 15px 0 0 652px;
 }
 
 @media (max-width: 768px) {
+    .wrapper {
+        max-width: 768px;
+    }
     .section-description {
-        margin-right: 57px;
+        margin: 26px 57px 0 41px;
     }
     .header__title {
         margin-top: 41px;
@@ -647,17 +650,29 @@ textarea.message__item {
         width: 180px;
         height: 363px;
     }
+    .vertical-phone_inactive {
+        width: 142px;
+        height: 252px;
+        top: 95px;
+        left: 49px;
+    }
     .horizontal-phone {
         height: 180px;
         width: 363px;
         margin-bottom: 91px;
+    }
+    .horizontal-phone_inactive {
+        width: 252px;
+        height: 142px;
+        top: 149px;
+        left: 317px;
     }
     .phones {
         width: 60%;
         padding: 24px 136px;
     }
     .services {
-        height: 675px;
+        height: 674px;
     }
     .services h2 {
         padding-top: 54px;
@@ -673,7 +688,10 @@ textarea.message__item {
         margin-top: 10px;
     }
     .portfolio {
-        height: 1101px;
+        height: 1102px;
+    }
+    .portfolio__tags {
+        margin: 9px 0 5px 42px;
     }
     .portfolio__images {
         margin: 17px 30px 0 29px;
@@ -682,7 +700,7 @@ textarea.message__item {
         flex: 1 0 24%;
     }
     .about-us {
-        height: 670px;
+        height: 669px;
     }
     .about-us h2 {
         padding-top: 69px;
@@ -706,13 +724,13 @@ textarea.message__item {
         margin: 3px 0 0 0;
     }
     .contact-us {
-        height: 630px;
+        height: 631px;
     }
-    .contact-us h2{
+    .contact-us h2 {
         padding-top: 68px;
     }
     .contact-form {
-        margin: 16px 31px;
+        margin: 20px 31px;
     }
     .contact-form__message {
         width: 60%;
@@ -724,25 +742,93 @@ textarea.message__item {
         margin-left: 56px;
     }
     .contact-info__description {
-        margin: 4px 0 10px 0;
+        margin: 2px 5px 10px 0;
     }
-    .contact-form textarea{
+    .contact-form textarea {
         height: 138px;
     }
-    .copyright{
+    .copyright {
         margin: 37px 0 0 41px;
     }
     .footer .social-networks {
-        margin: 15px 38px 0 397px;
+        margin: 15px 38px 0 438px;
     }
 }
 
 @media (max-width: 375px) {
+    h2 {
+        padding: 57px 0 0 32px;
+    }
+    .wrapper {
+        max-width: 375px;
+    }
+    .section-description {
+        margin: 26px 42px 0 32px;
+    }
+    .header {
+        position: relative;
+        height: 65px;
+    }
+    .header .wrapper {
+        display: block;
+    }
+    .header__title {
+        margin: 0;
+    }
+    .navigation {
+        display: block;
+        position: absolute;
+    }
+    .list-separator::after {
+        display: none;
+    }
+    .slider {
+        height: 221px;
+        padding-top: 0;
+    }
+    .arrow-prev {
+        margin: 6px 0 0 10px;
+    }
+    .arrow-next {
+        margin: 6px 10px 0 0;
+    }
+    .phone {
+        margin: 26px 7px 0px 15px;
+    }
+    .vertical-phone {
+        width: 88px;
+        height: 178px;
+    }
+    .horizontal-phone {
+        height: 88px;
+        width: 178px;
+        margin-bottom: 45px;
+    }
+    .phones {
+        width: 60%;
+        padding: 24px 66px;
+    }
+    .services {
+        height: 1032px;
+    }
+    .services h2{
+        padding-top: 40px;
+    }
+    .services .layout-3-column {
+        margin: 23px 23px;
+    }
+    .service {
+        margin: 5px 20px 9px 9px;
+        flex: 1 0 90%;
+    }
     .portfolio {
         height: 844px;
     }
+    .portfolio__tags {
+        margin: 14px 0 17px 31px;
+    }
     .portfolio__images {
-        margin: 0 10px 0 25px;
+        margin: 0 24px;
     }
     .portfolio__image {
         flex: 1 0 31%;
@@ -750,5 +836,29 @@ textarea.message__item {
     }
     .portfolio__image:nth-child(n+9) {
         display: none;
+    }
+    .about-us {
+        height: 1754px;
+    }
+    .about-us h2 {
+        padding-top: 48px;
+    }
+    .about-us .layout-3-column {
+        height: 1432px;
+        margin: 25px 30px 35px 32px;
+    }
+    .employee {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .employee__image {
+        margin-bottom: 15px;
+    }
+    .contact-us {
+        height: 969px;
+    }
+    .footer .social-networks {
+        margin: 15px 0 0 59px;
     }
 }

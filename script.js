@@ -9,20 +9,23 @@ const PORTFOLIO_TAGS = document.getElementById('portfolio-tags');
 const BUTTON = document.getElementById('submit-button');
 const CLOSE_BUTTON = document.getElementById('close-button');
 
-MENU.addEventListener('click', (event) => {
-    MENU.querySelectorAll('a').forEach(el => el.classList.remove('active-link'));
-    event.target.classList.add('active-link');
-})
+/* window.onload = changeActiveMenuLink(); */
 
-document.addEventListener('scroll', onScroll);
+document.addEventListener('scroll', changeActiveMenuLink);
 
-function onScroll() {
-    const currentPosition = window.scrollY;
+function changeActiveMenuLink() {
+    let currentPosition = window.scrollY;
     const sections = document.querySelectorAll('#main>section');
     const links = document.querySelectorAll('#menu a');
 
     sections.forEach((e) => {
-        if (e.offsetTop - e.offsetHeight / 3 <= currentPosition && (e.offsetTop + e.offsetHeight) > currentPosition) {
+        if (document.body.scrollHeight - window.innerHeight == currentPosition) {
+            links.forEach((a) => {
+                a.classList.remove('active-link');
+            })
+            links[links.length - 1].classList.add('active-link');
+        }
+        else if (e.offsetTop - 89 <= currentPosition && (e.offsetTop + e.offsetHeight - 89) > currentPosition) {
             links.forEach((a) => {
                 a.classList.remove('active-link');
                 if (e.getAttribute('id') === a.getAttribute('href').substring(1)) {
@@ -33,6 +36,11 @@ function onScroll() {
     })
 }
 
+MENU.addEventListener('click', (event) => {
+    MENU.querySelectorAll('a').forEach(el => el.classList.remove('active-link'));
+    event.target.classList.add('active-link');
+})
+
 function toggleBlackScreen(screen) {
     if (screen.style.opacity === '1') {
         screen.style.opacity = '0';
@@ -40,6 +48,7 @@ function toggleBlackScreen(screen) {
         screen.style.opacity = '1';
     }
 }
+
 let verticalBlackScreen = document.createElement('div');
 verticalBlackScreen.className = 'vertical-phone_inactive';
 VERTICAL_PHONE.after(verticalBlackScreen);
@@ -102,7 +111,7 @@ function changeBackground() {
     let slider = document.querySelector("#slider");
     if (!SLIDER_ITEMS[1].classList.contains("active")) {
         slider.style.backgroundColor = "#648BF0";
-        slider.style.boxShadow = "0 6px 0 #5D5BC5";
+        slider.style.boxShadow = "0 6px 0 #788bf0";
     } else {
         slider.style.backgroundColor = "#F06C64";
         slider.style.boxShadow = "0 6px 0 #EA676B";
