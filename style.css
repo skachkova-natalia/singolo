@@ -647,10 +647,22 @@ textarea.message__item {
         width: 180px;
         height: 363px;
     }
+    .vertical-phone_inactive {
+        width: 142px;
+        height: 252px;
+        top: 95px;
+        left: 49px;
+    }
     .horizontal-phone {
         height: 180px;
         width: 363px;
         margin-bottom: 91px;
+    }
+    .horizontal-phone_inactive {
+        width: 252px;
+        height: 142px;
+        top: 149px;
+        left: 317px;
     }
     .phones {
         width: 60%;
