@@ -94,13 +94,13 @@ input::placeholder, textarea::placeholder {
 
 .layout-2-column {
     display: flex;
+    justify-content: space-between;
 }
 
 .layout-3-column, .layout-4-column {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    overflow: hidden;
 }
 
 .wrapper {
@@ -113,14 +113,13 @@ input::placeholder, textarea::placeholder {
     font-size: 1.8rem;
     line-height: 3rem;
     font-weight: 300;
-    margin: 27px 41px 0 41px;
+    margin: 27px 26px 0 41px;
     letter-spacing: 0.001rem;
     word-spacing: -1px;
 }
 
 .header {
     background-color: #2d303a;
-    height: 89px;
     box-shadow: 0 6px 0 #323746;
     z-index: 6;
     position: fixed;
@@ -128,7 +127,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .header__title {
-    margin: 40px 0 0 40px;
+    margin: 40px 0 38px 40px;
 }
 
 .header__title span {
@@ -138,7 +137,7 @@ input::placeholder, textarea::placeholder {
 .navigation {
     display: flex;
     list-style: none;
-    margin: 42px 37px 0 395px;
+    margin: 41px 24px 32px 0;
 }
 
 .navigation__link {
@@ -223,11 +222,11 @@ input::placeholder, textarea::placeholder {
 }
 
 .arrow-prev {
-    margin-left: 42px;
+    margin-left: 36px;
 }
 
 .arrow-next {
-    margin-right: 40px;
+    margin-right: 19px;
 }
 
 .to-left {
@@ -266,17 +265,23 @@ input::placeholder, textarea::placeholder {
     }
 }
 
-.phone {
-    margin: 59px 14px 0 54px;
+.vertical-phone {
+    margin: 59px 0 58px 53px;
 }
 
 .horizontal-phone {
-    margin-bottom: 122px;
-    margin-left: 55px;
+    margin: 180px 55px 180px 0;
 }
 
 .phones {
-    padding: 44px 194px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phones img {
+    height: 80%;
 }
 
 .vertical-phone_inactive {
@@ -286,23 +291,22 @@ input::placeholder, textarea::placeholder {
     height: 333px;
     position: absolute;
     top: 124px;
-    left: 68px;
-    transition-duration: 1s;
+    left: 67px;
+    transition: opacity 1s;
 }
 
 .horizontal-phone_inactive {
     opacity: 0;
     background-color: #000000;
-    width: 333px;
+    width: 334px;
     height: 188px;
     position: absolute;
     top: 194px;
-    left: 427px;
-    transition-duration: 1s;
+    right: 145px;
+    transition: opacity 1s;
 }
 
 .services {
-    height: 500px;
     background-color: #f2f2f2;
     box-shadow: 0 6px 0 #ffffff;
     z-index: 4;
@@ -311,8 +315,8 @@ input::placeholder, textarea::placeholder {
 }
 
 .services .layout-3-column {
-    margin: 40px 31px;
-    align-items: flex-start;
+    margin: 40px 17px 0 31px;
+    padding-bottom: 35px;
 }
 
 .service {
@@ -341,7 +345,6 @@ input::placeholder, textarea::placeholder {
 }
 
 .portfolio {
-    height: 869px;
     background-color: #2d303a;
     box-shadow: 0 6px 0 #323746;
     z-index: 3;
@@ -350,7 +353,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .portfolio__tags {
-    margin: 7px 42px;
+    margin: 7px 42px 10px;
 }
 
 .tag {
@@ -378,7 +381,8 @@ input::placeholder, textarea::placeholder {
 }
 
 .portfolio__images {
-    margin: 0 30px 0 31px;
+    margin: 0 15px 0 30px;
+    padding-bottom: 57px;
 }
 
 .portfolio__image {
@@ -401,7 +405,6 @@ input::placeholder, textarea::placeholder {
 }
 
 .about-us {
-    height: 734px;
     background-color: #f2f2f2;
     z-index: 2;
     position: relative;
@@ -410,24 +413,20 @@ input::placeholder, textarea::placeholder {
 }
 
 .about-us .layout-3-column {
-    height: 470px;
-    margin: 35px 29px 35px 30px;
+    margin: 45px 15px 0 30px;
+    padding-bottom: 61px;
 }
 
 .employee {
-    width: calc(33% - 17px);
-    margin: 10px;
-    height: inherit;
-}
-
-.employee__image {
-    margin-bottom: 13px;
+    flex: 1 0 29%;
+    margin: 0 10px;
 }
 
 .employee__name {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-top: 13px;
 }
 
 .emploee__description {
@@ -467,7 +466,6 @@ input::placeholder, textarea::placeholder {
 }
 
 .contact-us {
-    height: 654px;
     background-color: #f06c64;
     z-index: 1;
     position: relative;
@@ -481,7 +479,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .contact-form {
-    margin: 37px 34px;
+    margin: 37px 22px 0 34px;
 }
 
 .contact-form__message {
@@ -493,7 +491,7 @@ input::placeholder, textarea::placeholder {
     border-radius: 5px;
     background-color: #d6564f;
     padding: 8px 0 11px 13px;
-    margin: 8px;
+    margin: 8px 0 8px 8px;
     width: 100%;
 }
 
@@ -521,7 +519,6 @@ textarea.message__item {
 .contact-form__info {
     width: 32%;
     padding-top: 7px;
-    margin-left: 47px;
 }
 
 .contact-form__info h3 {
@@ -610,21 +607,18 @@ textarea.message__item {
 }
 
 .footer .social-networks {
-    margin: 15px 0 0 652px;
+    margin: 15px 24px 0 0;
 }
 
-@media (max-width: 768px) {
-    .wrapper {
-        max-width: 768px;
-    }
+@media (max-width: 1019px) {
     .section-description {
-        margin: 26px 57px 0 41px;
+        margin: 26px 41px 0 41px;
     }
     .header__title {
-        margin-top: 41px;
+        margin: 41px 0 41px 40px;
     }
     .navigation {
-        margin: 40px 38px 0 138px;
+        margin-top: 39px;
     }
     .navigation__link {
         margin-left: 13px;
@@ -640,106 +634,88 @@ textarea.message__item {
         margin-top: 11px;
     }
     .arrow-next {
-        margin-right: 27px;
+        margin-right: 12px;
         margin-top: 11px;
     }
-    .phone {
-        margin: 47px 11px 0 39px;
-    }
     .vertical-phone {
-        width: 180px;
+        width: 181px;
         height: 363px;
+        margin: 47px 0 0 37px;
     }
     .vertical-phone_inactive {
-        width: 142px;
-        height: 252px;
-        top: 95px;
-        left: 49px;
+        width: 143px;
+        height: 250px;
+        top: 96px;
+        left: 48px;
     }
     .horizontal-phone {
-        height: 180px;
+        height: 181px;
         width: 363px;
-        margin-bottom: 91px;
+        margin: 139px 41px 0 0;
     }
     .horizontal-phone_inactive {
-        width: 252px;
+        width: 250px;
         height: 142px;
         top: 149px;
-        left: 317px;
-    }
-    .phones {
-        width: 60%;
-        padding: 24px 136px;
-    }
-    .services {
-        height: 674px;
+        right: 109px;
     }
     .services h2 {
         padding-top: 54px;
     }
     .services .layout-3-column {
-        margin: 31px 31px;
+        padding-bottom: 20px;
+        margin: 31px 19px 0 31px;
     }
     .service {
-        margin: 5px 40px 34px 9px;
+        margin: 5px 40px 34px 10px;
         flex: 1 0 31%;
     }
     .service__description {
         margin-top: 10px;
     }
-    .portfolio {
-        height: 1102px;
-    }
     .portfolio__tags {
-        margin: 9px 0 5px 42px;
+        margin: 10px 0 16px 42px;
     }
     .portfolio__images {
-        margin: 17px 30px 0 29px;
+        padding-bottom: 59px;
+        margin: 0 17px 0 29px;
+        padding-bottom: 59px;
     }
     .portfolio__image {
         flex: 1 0 24%;
     }
-    .about-us {
-        height: 669px;
-    }
     .about-us h2 {
-        padding-top: 69px;
+        padding-top: 67px;
     }
     .about-us .layout-3-column {
-        height: 400px;
-        margin: 28px 32px 35px 34px;
+        margin: 32px 18px 0 35px;
+        padding-bottom: 56px;
     }
     .employee {
-        width: calc(33% - 14px);
-        margin: 8px;
-        height: inherit;
-    }
-    .employee__image {
-        margin-bottom: 9px;
+        margin: 7px;
     }
     .employee__image img {
         width: 100%;
     }
-    .emploee__description {
-        margin: 3px 0 0 0;
+    .employee__name {
+        margin-top: 8px;
     }
-    .contact-us {
-        height: 631px;
+    .emploee__description {
+        margin: 3px 0 -3px 0;
+        line-height: 2.2rem;
     }
     .contact-us h2 {
         padding-top: 68px;
     }
     .contact-form {
-        margin: 20px 31px;
+        margin: 19px 18px 0 34px;
+        padding-bottom: 59px;
     }
     .contact-form__message {
         width: 60%;
     }
     .message__item {
-        margin: 6px;
-    }
-    .contact-form__info {
-        margin-left: 56px;
+        margin: 6px 0 6px 6px;
     }
     .contact-info__description {
         margin: 2px 5px 10px 0;
@@ -750,12 +726,13 @@ textarea.message__item {
     .copyright {
         margin: 37px 0 0 41px;
     }
-    .footer .social-networks {
-        margin: 15px 38px 0 438px;
-    }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.9rem;
+        line-height: 2.4rem;
+    }
     h2 {
         padding: 57px 0 0 32px;
     }
@@ -763,7 +740,7 @@ textarea.message__item {
         max-width: 375px;
     }
     .section-description {
-        margin: 26px 42px 0 32px;
+        margin: 26px 21px 0 30px;
     }
     .header {
         position: relative;
@@ -774,6 +751,7 @@ textarea.message__item {
     }
     .header__title {
         margin: 0;
+        padding: 25px 147px;
     }
     .navigation {
         display: block;
@@ -790,45 +768,47 @@ textarea.message__item {
         margin: 6px 0 0 10px;
     }
     .arrow-next {
-        margin: 6px 10px 0 0;
-    }
-    .phone {
-        margin: 26px 7px 0px 15px;
+        margin: 6px -6px 0 0;
     }
     .vertical-phone {
-        width: 88px;
+        width: 89px;
         height: 178px;
+        margin: 26px 0 0 15px;
+    }
+    .vertical-phone_inactive {
+        width: 70px;
+        height: 123px;
+        top: 50px;
+        left: 20px;
     }
     .horizontal-phone {
         height: 88px;
         width: 178px;
-        margin-bottom: 45px;
+        margin: 71px 16px 0 0;
     }
-    .phones {
-        width: 60%;
-        padding: 24px 66px;
+    .horizontal-phone_inactive {
+        width: 123px;
+        height: 70px;
+        top: 76px;
+        right: 49px;
     }
-    .services {
-        height: 1032px;
-    }
-    .services h2{
+    .services h2 {
         padding-top: 40px;
     }
     .services .layout-3-column {
-        margin: 23px 23px;
+        margin: 23px 12px 0 23px;
+        padding-bottom: 1px;
     }
     .service {
-        margin: 5px 20px 9px 9px;
+        margin: 6px 16px 7px 9px;
         flex: 1 0 90%;
     }
-    .portfolio {
-        height: 844px;
-    }
     .portfolio__tags {
-        margin: 14px 0 17px 31px;
+        margin: 14px 0 17px 30px;
     }
     .portfolio__images {
-        margin: 0 24px;
+        margin: 0 9px 0 24px;
+        padding-bottom: 30px;
     }
     .portfolio__image {
         flex: 1 0 31%;
@@ -837,28 +817,53 @@ textarea.message__item {
     .portfolio__image:nth-child(n+9) {
         display: none;
     }
-    .about-us {
-        height: 1754px;
-    }
     .about-us h2 {
         padding-top: 48px;
     }
     .about-us .layout-3-column {
-        height: 1432px;
-        margin: 25px 30px 35px 32px;
+        margin: 25px 15px 0 31px;
+        padding-bottom: 5px;
     }
     .employee {
-        width: 100%;
-        margin: 0;
-        height: auto;
+        flex: 1 0 100%;
+        margin: 0 0 28px 0;
     }
-    .employee__image {
-        margin-bottom: 15px;
+    .employee__name {
+        margin-top: 14px;
     }
-    .contact-us {
-        height: 969px;
+    .contact-us h2 {
+        padding: 59px 0 0 30px;
+    }
+    .contact-form {
+        display: block;
+        margin: 18px 15px 0 24px;
+        padding-bottom: 34px;
+    }
+    .contact-form__message {
+        width: 93%;
+    }
+    .message_button {
+        width: 106%;
+        height: 50px;
+        margin: 2px 0 0 6px;
+    }
+    .contact-form__info {
+        margin: 25px 0px 0 6px;
+        width: 98%;
+    }
+    .contact-info__description {
+        margin: 2px 0 10px 0;
+    }
+    .contact-info__item {
+        line-height: 2.5rem;
+    }
+    .message {
+        margin: 30vh 0;
+    }
+    .copyright {
+        display: none;
     }
     .footer .social-networks {
-        margin: 15px 0 0 59px;
+        margin: 15px 0 0 104px;
     }
 }
