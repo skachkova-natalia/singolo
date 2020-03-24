@@ -9,14 +9,13 @@ const PORTFOLIO_TAGS = document.getElementById('portfolio-tags');
 const BUTTON = document.getElementById('submit-button');
 const CLOSE_BUTTON = document.getElementById('close-button');
 
-/* window.onload = changeActiveMenuLink(); */
-
 document.addEventListener('scroll', changeActiveMenuLink);
 
 function changeActiveMenuLink() {
     let currentPosition = window.scrollY;
-    const sections = document.querySelectorAll('#main>section');
-    const links = document.querySelectorAll('#menu a');
+    let sections = document.querySelectorAll('#main>section');
+    let links = document.querySelectorAll('#menu a');
+    let headerHeight = document.getElementById('header').offsetHeight;
 
     sections.forEach((e) => {
         if (document.body.scrollHeight - window.innerHeight == currentPosition) {
@@ -25,7 +24,7 @@ function changeActiveMenuLink() {
             })
             links[links.length - 1].classList.add('active-link');
         }
-        else if (e.offsetTop - 89 <= currentPosition && (e.offsetTop + e.offsetHeight - 89) > currentPosition) {
+        else if (e.offsetTop - headerHeight <= currentPosition && (e.offsetTop + e.offsetHeight - headerHeight) > currentPosition) {
             links.forEach((a) => {
                 a.classList.remove('active-link');
                 if (e.getAttribute('id') === a.getAttribute('href').substring(1)) {
