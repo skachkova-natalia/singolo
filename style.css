@@ -113,7 +113,7 @@ input::placeholder, textarea::placeholder {
     font-size: 1.8rem;
     line-height: 3rem;
     font-weight: 300;
-    margin: 27px 26px 0 41px;
+    margin: 27px 40px 0 41px;
     letter-spacing: 0.001rem;
     word-spacing: -1px;
 }
@@ -141,7 +141,7 @@ input::placeholder, textarea::placeholder {
 .navigation {
     display: flex;
     list-style: none;
-    margin: 41px 24px 33px 0;
+    margin: 41px 38px 33px 0;
 }
 
 .navigation__link {
@@ -226,11 +226,11 @@ input::placeholder, textarea::placeholder {
 }
 
 .arrow-prev {
-    margin-left: 36px;
+    margin-left: 42px;
 }
 
 .arrow-next {
-    margin-right: 19px;
+    margin-right: 39px;
 }
 
 .to-left {
@@ -270,11 +270,11 @@ input::placeholder, textarea::placeholder {
 }
 
 .vertical-phone {
-    margin: 59px 0 58px 53px;
+    margin: 59px 0 58px 54px;
 }
 
 .horizontal-phone {
-    margin: 180px 55px 180px 0;
+    margin: 180px 56px 180px 0;
 }
 
 .phones {
@@ -295,7 +295,7 @@ input::placeholder, textarea::placeholder {
     height: 333px;
     position: absolute;
     top: 124px;
-    left: 67px;
+    left: 68px;
     transition: opacity 1s;
 }
 
@@ -306,7 +306,7 @@ input::placeholder, textarea::placeholder {
     height: 188px;
     position: absolute;
     top: 194px;
-    right: 145px;
+    right: 146px;
     transition: opacity 1s;
 }
 
@@ -319,7 +319,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .services .layout-3-column {
-    margin: 40px 17px 0 31px;
+    margin: 40px 32px 0 31px;
     padding-bottom: 35px;
 }
 
@@ -357,7 +357,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .portfolio__tags {
-    margin: 7px 42px 10px;
+    margin: 7px 42px;
 }
 
 .tag {
@@ -385,8 +385,8 @@ input::placeholder, textarea::placeholder {
 }
 
 .portfolio__images {
-    margin: 0 15px 0 30px;
-    padding-bottom: 57px;
+    margin: 1px 30px;
+    padding-bottom: 60px;
 }
 
 .portfolio__image {
@@ -417,7 +417,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .about-us .layout-3-column {
-    margin: 45px 15px 0 30px;
+    margin: 45px 30px 0 30px;
     padding-bottom: 61px;
 }
 
@@ -483,7 +483,8 @@ input::placeholder, textarea::placeholder {
 }
 
 .contact-form {
-    margin: 37px 22px 0 34px;
+    margin: 37px 40px 0 33px;
+    padding-bottom: 29px;
 }
 
 .contact-form__message {
@@ -611,12 +612,12 @@ textarea.message__item {
 }
 
 .footer .social-networks {
-    margin: 15px 24px 0 0;
+    margin: 15px 39px 0 0;
 }
 
 @media (max-width: 1019px) {
     .section-description {
-        margin: 26px 41px 0 41px;
+        margin: 26px 56px 0 41px;
     }
     .header__title {
         margin: 41px 0 42px 40px;
@@ -638,13 +639,13 @@ textarea.message__item {
         margin-top: 11px;
     }
     .arrow-next {
-        margin-right: 12px;
+        margin-right: 26px;
         margin-top: 11px;
     }
     .vertical-phone {
         width: 181px;
         height: 363px;
-        margin: 47px 0 0 37px;
+        margin: 47px 0 0 38px;
     }
     .vertical-phone_inactive {
         width: 143px;
@@ -655,20 +656,20 @@ textarea.message__item {
     .horizontal-phone {
         height: 181px;
         width: 363px;
-        margin: 139px 41px 0 0;
+        margin: 139px 43px 0 0;
     }
     .horizontal-phone_inactive {
         width: 250px;
-        height: 142px;
+        height: 143px;
         top: 149px;
-        right: 109px;
+        right: 111px;
     }
     .services h2 {
         padding-top: 54px;
     }
     .services .layout-3-column {
         padding-bottom: 20px;
-        margin: 31px 19px 0 31px;
+        margin: 31px 34px 0 31px;
     }
     .service {
         margin: 5px 40px 34px 10px;
@@ -678,12 +679,10 @@ textarea.message__item {
         margin-top: 10px;
     }
     .portfolio__tags {
-        margin: 10px 0 16px 42px;
+        margin: 10px 42px;
     }
     .portfolio__images {
-        padding-bottom: 59px;
-        margin: 0 17px 0 29px;
-        padding-bottom: 59px;
+        margin: 15px 31px 0 29px;
     }
     .portfolio__image {
         flex: 1 0 24%;
@@ -692,8 +691,8 @@ textarea.message__item {
         padding-top: 67px;
     }
     .about-us .layout-3-column {
-        margin: 32px 18px 0 35px;
-        padding-bottom: 56px;
+        margin: 32px 33px 0 35px;
+        padding-bottom: 55px;
     }
     .employee {
         margin: 7px;
@@ -712,7 +711,7 @@ textarea.message__item {
         padding-top: 68px;
     }
     .contact-form {
-        margin: 19px 18px 0 34px;
+        margin: 19px 33px 0 34px;
         padding-bottom: 59px;
     }
     .contact-form__message {
@@ -910,7 +909,7 @@ textarea.message__item {
     .contact-form__message {
         width: 93%;
     }
-    .message__item{
+    .message__item {
         width: 96%;
     }
     .message_button {
